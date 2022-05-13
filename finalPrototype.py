@@ -238,8 +238,8 @@ class PlateFinder:
 
 class NeuralNetwork:
     def __init__(self):
-        self.model_file = r"C:\Users\anvin\PycharmProjects\ML\LicensePlateRecognition-master\model\binary_128_0.50_ver3.pb"
-        self.label_file = r"C:\Users\anvin\PycharmProjects\ML\LicensePlateRecognition-master\model\binary_128_0.50_labels_ver2.txt"
+        self.model_file = r"C:\xyz\binary_128_0.50_ver3.pb"
+        self.label_file = r"C:\xysdf\binary_128_0.50_labels_ver2.txt"
         self.label = self.load_label(self.label_file)
         self.graph = self.load_graph(self.model_file)
         self.sess = tf.compat.v1.Session(graph=self.graph)
